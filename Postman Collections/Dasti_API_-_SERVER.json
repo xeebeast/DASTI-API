@@ -155,7 +155,7 @@
       "_postman_id": "24d120fc-16e1-3b90-d121-5ea0b4e7140b",
       "name": "Reorder",
       "request": {
-        "url": "http://localhost:8000/api/order/reorder",
+        "url": "http://api.hubbak.com/order/reorder",
         "method": "POST",
         "header": [
           {
