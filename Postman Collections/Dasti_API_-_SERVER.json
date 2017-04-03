@@ -1,0 +1,350 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Dasti API - SERVER",
+    "_postman_id": "dc2e3196-eacf-cbaf-7b40-164b43a75794",
+    "description": "All server call for DASTI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "d7fcfc3b-5a52-e349-72ae-d91ad4bd8f53",
+      "name": "register",
+      "request": {
+        "url": "http://api.hubbak.com/register",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "//User-Agent",
+            "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4",
+            "description": "",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \r\n\"firstname\":\"zeeshan\",\r\n\"lastname\":\"tariq\",\r\n\"email\":\"dastitest@dasti.com\",\r\n\"mobile\":\"03085525873\",\r\n\"password\":\"1122\",\r\n\"social_register\":0,\r\n\"social_id\":\"123abc2\",\r\n\"social_type\":\"fb\",\r\n\"app_id\":\"abc\",\r\n\"client_id\":123,\r\n\"device_token\":\"test_token\"\r\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "fa5efd44-cfbc-58bd-953c-787245e02b9d",
+      "name": "login",
+      "request": {
+        "url": "http://api.hubbak.com/login",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\n\t\"login_type\":0,\n\t\"email\"     :\"new@new.com\",\n\t\"password\"  :\"123123\",\n\t\"social_id\" :\"123abc2\", \n\t\"app_id\"    :\"abc\",\n\t\"client_id\" :\"123\"\n\t\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "b9d56592-6122-ab1b-d180-4befceee5312",
+      "name": "rider login ",
+      "request": {
+        "url": "http://api.hubbak.com/login",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\n\t\"login_type\":0,\n\t\"email\"     :\"rider4@gmail.com\",\n\t\"password\"  :\"123123\",\n\t\"social_id\" :\"123abc2\",\n\t\"app_id\"    :\"abc\",\n\t\"client_id\" :\"123\"\n\t\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "8185b9e3-1aa9-566f-454f-515be49d1c3d",
+      "name": "logout",
+      "request": {
+        "url": "http://api.hubbak.com/logout",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"token\"    :\"MzIxw$MTctMD$MtM$jcg$MT$c6MTc6M$zFyaW$RlcjFAZ2a1haWwuY29tODU4MTk\",\n\t\"app_id\"   :\"abc\",\n\t\"client_id\":\"123\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "74d0e116-d021-d95e-2e98-a91fbef302e5",
+      "name": "profile update",
+      "request": {
+        "url": "http://api.hubbak.com/profile",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\n\t\"token\"    :\"NjIwMTYty$MTItxMDYgMDU6McjA6MajB6ZWfaViZW$FzdDRAyaG90bWFpbC5jb203OTcwOA\",\n\t\"about\"    :\"test about desciption\",\n\t\"app_id\"   :\"abc\",\n\t\"client_id\":\"123\"\n\t\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "792666f9-3271-f420-8dc4-ab2a175952e6",
+      "name": "get user",
+      "request": {
+        "url": "http://api.hubbak.com/profile?token=MzIwMTYtM$TE$tM$jQg$MDk6MzQ6MzFa6ZWViZWFzdDFAaaG90bWdaFpbC5j$b20zMzYxMw&app_id=abc&client_id=123",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "f4da9200-7568-916f-8b09-1de3672cb36e",
+      "name": "new Order",
+      "request": {
+        "url": "http://api.hubbak.com/order",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"orderOptions\"    :\"ro\", \n\t\"pick_lat\"        :\"31.471096\",\n\t\"pick_lon\"        :\"74.240849\",\n\t\"pick_name\"       :\"pick name\",\n\t\"pick_phone\"      :\"456\",\n\t\"pick_address\"    :\"testpick\",\n\t\"drop_lat\"        :\"31.506522\",\n\t\"drop_lon\"        :\"74.295969\",\n\t\"drop_name\"       :\"drop name\",\n\t\"drop_phone\"      :\"789\",\n\t\"pick_instruction\":\"test pick instruction\",\n\t\"drop_instruction\":\"test drop instruction\",\n\t\"drop_address\"    :\"testdrop\",\n\t\"pcp\"             :\"pickup\",\n\t\"items\"           :[1,2],\n\t\"items_quantity\"  :[1,3],\n\t\"token\"           :\"N$jIwMTctMfDMtMz$AgcMTQ6NDUxb6NDbZ$kYXN0aXRlc3R$AZGFzdGkuY29tNTkz\",\n\t\"app_id\"          :\"abc\",\n\t\"client_id\"       :\"123\"\n\t\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "fb20d501-9ce3-ac6c-c9c0-3525994ecd87",
+      "name": "new Order SO",
+      "request": {
+        "url": "http://api.hubbak.com/order",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"orderOptions\"    :\"so\", \n\t\"pick_lat\"        :\"31.483734\",\n\t\"pick_lon\"        :\"74.285489\",\n\t\"pick_name\"       :\"pick name\",\n\t\"pick_phone\"      :456,\n\t\"pick_address\"    :\"testpick\",\n\t\"drop_lat\"        :null,\n\t\"drop_lon\"        :null,\n\t\"drop_name\"       :null,\n\t\"drop_phone\"      :null,\n\t\"pick_instruction\":\"test pick instruction\",\n\t\"drop_instruction\":null,\n\t\"drop_address\"    :null,\n\t\"pcp\"             :\"pickup\",\n\t\"items\"           :[1,2],\n\t\"items_quantity\"  :[1,3],\n\t\"token\"           :\"Nj$IwMb$TctMDfItMj$IgMTM6Mz$U6eMDFjbGllbnQ1QGhvdG1ha$Ww$uY29tODE0MjU\",\n\t\"app_id\"          :\"abc\",\n\t\"client_id\"       :\"123\"\n\t\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "f0a673eb-c6bf-ab83-603f-21a9bf644e7c",
+      "name": "new Order SGO (Service Groceery Order) copy",
+      "request": {
+        "url": "http://api.hubbak.com/order",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"orderOptions\"    :\"sgo\", \n\t\"pick_lat\"        : null,\n\t\"pick_lon\"        : null,\n\t\"pick_name\"       : null,\n\t\"pick_phone\"      : null,\n\t\"pick_address\"    : null,\n\t\"drop_lat\"        :\"31.483734\",\n\t\"drop_lon\"        :\"74.285489\",\n\t\"drop_name\"       :\"taimur\",\n\t\"drop_phone\"      :\"456\",\n\t\"pick_instruction\": null,\n\t\"drop_instruction\":\"test instruction\",\n\t\"drop_address\"    :\"test address\",\n\t\"pcp\"             :\"pickup\",\n\t\"token\"           :\"Nj$IwMb$TctMDfItMj$IgMTM6Mz$U6eMDFjbGllbnQ1QGhvdG1ha$Ww$uY29tODE0MjU\",\n\t\"app_id\"          :\"abc\",\n\t\"client_id\"       :\"123\"\n\t\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "604d98fa-7c83-f49c-65f6-16ac22b0be7d",
+      "name": " Check OTP ",
+      "request": {
+        "url": "http://api.hubbak.com/otp",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"code\"     :\"ipdj3dl\",\n\t\"app_id\"   :\"abc\",\n\t\"client_id\":123\n\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "fbf1d5ad-118c-2cdc-1c01-3fa0dcdda742",
+      "name": "Push Notification",
+      "request": {
+        "url": "http://api.hubbak.com/push",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "//Authorization",
+            "value": "AIzaSyAu4_OiHdn6qMdRrSZhzABZlUgXKKUb4Pg",
+            "description": "",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\n\t\"app_id\":\"abc\",\n\t\"client_id\":123\n\t\n}\t"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "93d917bd-d665-6dd3-8180-17e359cc7242",
+      "name": "updateLatLon",
+      "request": {
+        "url": "http://api.hubbak.com/updatelatlon",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"token\"     :\"a$MzIwMTYtM$TItMjMgMTY6MjU6M$zjlyaWRblccjFAZ21haWw$uY2$9tODk3OA\",\n\t\"app_id\"    :\"abc\",\n\t\"client_id\" :\"123\",\n\t\"lat\"       :31.478922,\n\t\"lon\"       :74.284669\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "640b9199-9ebf-b1d7-bfa1-f52429b0e639",
+      "name": "Update order status",
+      "request": {
+        "url": "http://api.hubbak.com/update/order/status",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"order_id\"        :5,\n\t\"order_status\"    :5,\n\t\"token\"           :\"MzIwM$TctMDE$$tMjMgMTE6MyzY6MzByaW$RlcjFAZ2e1$ha$Ww$uY29tNDgyMTk\",\n\t\"app_id\"          :\"abc\",\n\t\"client_id\"       :\"123\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "dcbee470-4578-4790-c4bd-ce0f48146549",
+      "name": "Update order as complete",
+      "request": {
+        "url": "http://api.hubbak.com/update/order/status/complete",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"order_id\"        :8,\n\t\"order_status\"    :4,\n\t\"token\"           :\"NjIwMTctMDEtMjYg$MT$I6NTg6MDaBjbGy$llbnQ1QGhvx$dG1haWwuY29tOfDIa3MDM\",\n\t\"app_id\"          :\"abc\",\n\t\"client_id\"       :\"123\"\n}"
+        },
+        "description": "\t"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "5fd2c1d7-ff6e-03bf-975b-fe9c27cbcc1b",
+      "name": " AcceptOrder",
+      "request": {
+        "url": "http://api.hubbak.com/acceptorder",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"order_id\"  :8,\n\t\"riders\"    :0,\n\t\"token\"     :\"MzeIwMTctMDEtMjyYgMTM6$Mzg6Mcz$NyabWRldccjFAZ21haWawuY29tNDU1ODY\",\n\t\"app_id\"    :\"abc\",\n\t\"client_id\" :\"123\"\n\t\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "d291e090-23ed-712d-f36f-2134fbd18cdb",
+      "name": "get requested riders for order",
+      "request": {
+        "url": "http://api.hubbak.com/getorderrequestedriders",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"order_id\"        :3,\n\t\"token\"           :\"Mcz$IwMTct$MDEt$MjYg$MTU6MTE6McDlyaWRlcjFAZ21chaWweuY29tNT$A3Mjk\",\n\t\"app_id\"          :\"abc\",\n\t\"client_id\"       :\"123\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
