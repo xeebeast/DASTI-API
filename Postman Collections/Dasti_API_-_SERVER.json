@@ -345,6 +345,27 @@
         "description": ""
       },
       "response": []
+    },
+    {
+      "_postman_id": "24d120fc-16e1-3b90-d121-5ea0b4e7140b",
+      "name": "Local - Reorder copy",
+      "request": {
+        "url": "http://localhost:8000/api/order/reorder",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"order_id\"        :12, \n  \"token\"           :\"NdjIwMTcftMDMtMzZAgMfeTM6Mzg6MjB0ZXfN0QfHzRlc3QuY2$9tODQzMzA\",\n  \"app_id\"          :\"abc\",\n  \"client_id\"       :\"123\"\n  \n}"
+        },
+        "description": ""
+      },
+      "response": []
     }
   ]
 }
