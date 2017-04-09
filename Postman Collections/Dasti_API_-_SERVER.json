@@ -70,7 +70,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n\t\n\t\"login_type\":0,\n\t\"email\"     :\"rider4@gmail.com\",\n\t\"password\"  :\"123123\",\n\t\"social_id\" :\"123abc2\",\n\t\"app_id\"    :\"abc\",\n\t\"client_id\" :\"123\"\n\t\n}"
+          "raw": "{\n  \n  \"login_type\":0,\n  \"email\"     :\"rider2@gmail.com\",\n  \"password\"  :\"secret\",\n  \"social_id\" :\"123abc2\",\n  \"app_id\"    :\"abc\",\n  \"client_id\" :\"123\"\n  \n}"
         },
         "description": ""
       },
