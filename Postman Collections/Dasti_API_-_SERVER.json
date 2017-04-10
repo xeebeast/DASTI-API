@@ -28,7 +28,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{ \r\n\"firstname\":\"zeeshan\",\r\n\"lastname\":\"tariq\",\r\n\"email\":\"dastitest@dasti.com\",\r\n\"mobile\":\"03085525873\",\r\n\"password\":\"1122\",\r\n\"social_register\":0,\r\n\"social_id\":\"123abc2\",\r\n\"social_type\":\"fb\",\r\n\"app_id\":\"abc\",\r\n\"client_id\":123,\r\n\"device_token\":\"test_token\"\r\n}"
+          "raw": "{ \r\n\"firstname\":\"zeeshan\",\r\n\"lastname\":\"tariq\",\r\n\"email\":\"dastitest3@dasti.com\",\r\n\"mobile\":\"03085525874\",\r\n\"password\":\"1122\",\r\n\"social_register\":1,\r\n\"social_id\":\"123abc2\",\r\n\"social_type\":\"fb\",\r\n\"app_id\":\"abc\",\r\n\"client_id\":123,\r\n\"device_token\":\"test_token\"\r\n}"
         },
         "description": ""
       },
