@@ -361,7 +361,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n\t\"order_id\"        :3,\n\t\"token\"           :\"Mcz$IwMTct$MDEt$MjYg$MTU6MTE6McDlyaWRlcjFAZ21chaWweuY29tNT$A3Mjk\",\n\t\"app_id\"          :\"abc\",\n\t\"client_id\"       :\"123\"\n}"
+          "raw": "{\n  \"order_id\"        :3,\n  \"token\"           :\"NzIwMTctMDQt$MTdEgMTI6fMxDA6MzdkYXN0aXRlc3QzxQbGRhc3dRpLmeNvbfTMwMTIz\",\n  \"app_id\"          :\"abc\",\n  \"client_id\"       :\"123\"\n}"
         },
         "description": ""
       },
